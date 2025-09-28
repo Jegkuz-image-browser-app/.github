@@ -1,5 +1,4 @@
-
-
+# Version №1
 ## Hi there 👋
 🚀 Social Platform (Microservices Edition) <br>
 Welcome to the Image Sharing Platform repository, a platform built on a microservices architecture. <br>
@@ -30,3 +29,25 @@ MinIO (Object Storage): Stores and retrieves all profile and post images. <br>
 ### Front-end
 ReactJS. <br>
 Tailwind.
+
+## Set Up
+
+Install Docker. (https://www.docker.com/products/docker-desktop/) <br>
+
+Create a directory locally that will contain all the repositories.
+Open CMD and first clone infra repository using: <br>
+```git clone https://github.com/Jegkuz-image-browser-app/infra.git``` <br>
+
+Go into ```infra``` folder and copy the rest of the services into it: <br>
+```git clone https://github.com/Jegkuz-image-browser-app/post_service.git``` <br>
+```git clone https://github.com/Jegkuz-image-browser-app/user_service.git``` <br>
+```git clone https://github.com/Jegkuz-image-browser-app/authentication_service.git``` <br>
+
+```
+/ImageScroller (Root folder)
+└── /infra
+    ├── docker-compose.yaml
+    ├── /auth-service
+    ├── /user-service
+    └── /post-service
+```
